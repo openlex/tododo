@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "test-update": "npx jest --updateSnapshot",
     "test": "npx jest",
-    "lint": "npx eslint --ext .js,.jsx,.ts,.tsx --fix ./",
+    "lint-fix": "npx eslint --fix --ext .js,.jsx,.ts,.tsx src/",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -84,7 +84,7 @@
     "postcss-custom-properties": "^9.1.1",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
-    "prettier": "^2.0.5",
+    "prettier": "2.2.1",
     "puppeteer": "^5.1.0",
     "react-docgen-typescript-loader": "^3.7.2",
     "react-redux": "^7.2.1",

@@ -2,4 +2,4 @@ interface IWebpackRequire {
 	p: string;
 }
 
-declare var __webpack_require__: IWebpackRequire;
+declare let __webpack_require__: IWebpackRequire;

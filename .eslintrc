@@ -17,11 +17,13 @@
   },
   "rules": {
     "quotes": [2, "single", { "avoidEscape": true }],
-    "jsx-quotes": [2, "prefer-single"],
+    "jsx-quotes": [2, "prefer-double"],
     "jest/expect-expect": 0,
     "prettier/prettier": [
       "error",
       {
+        "singleQuote": true,
+        "jsxSingleQuote": false,
         "useTabs": true,
         "endOfLine": "auto",
         "tabWidth": 4

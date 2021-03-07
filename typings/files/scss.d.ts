@@ -1,4 +1,4 @@
-declare module "*.scss" {
-	const s: any|any[];
+declare module '*.scss' {
+	const s: any | any[];
 	export = s;
 }

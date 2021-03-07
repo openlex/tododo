@@ -6,15 +6,15 @@ module.exports = (isDevMode, options) => {
 		options: {
 			publicPath: 'dist/css/',
 			modules: true,
-			sourceMap: isDevMode
+			sourceMap: isDevMode,
 		},
-	}
+	};
 
-	return ({
+	return {
 		rules: [
 			{
 				test: /\.(js|ts|md)x?$/,
-				loader: require.resolve("babel-loader"),
+				loader: require.resolve('babel-loader'),
 				exclude: /node_modules/,
 			},
 			{
@@ -27,7 +27,8 @@ module.exports = (isDevMode, options) => {
 						options: {
 							importLoaders: 1,
 							modules: {
-								localIdentName: '[name]__[local]-[hash:base64:5]',
+								localIdentName:
+									'[name]__[local]-[hash:base64:5]',
 							},
 							sourceMap: isDevMode,
 						},
@@ -42,8 +43,8 @@ module.exports = (isDevMode, options) => {
 					{
 						loader: 'sass-loader',
 						options: {
-							sourceMap: isDevMode
-						}
+							sourceMap: isDevMode,
+						},
 					},
 				],
 			},
@@ -57,11 +58,11 @@ module.exports = (isDevMode, options) => {
 					{
 						loader: 'sass-loader',
 						options: {
-							sourceMap: isDevMode
-						}
-					}
-				]
-			}
+							sourceMap: isDevMode,
+						},
+					},
+				],
+			},
 		],
-	})
-}
+	};
+};
