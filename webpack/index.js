@@ -26,7 +26,9 @@ const configs = {
 		],
 		alias: aliases,
 	},
-	module: webpackRules(devMode),
+	module: {
+		rules: webpackRules(devMode),
+	},
 	devServer: {
 		contentBase: path.join(__dirname, '../dist'),
 		port: 8008,
@@ -37,8 +39,16 @@ const configs = {
 	optimization: !devMode
 		? {
 				minimizer: [new CssMinimizerPlugin()],
+				splitChunks: {
+					chunks: 'all',
+				},
 		  }
-		: undefined,
+		: {
+			splitChunks: {
+				chunks: 'all',
+			},
+		},
+
 };
 
 module.exports = configs;

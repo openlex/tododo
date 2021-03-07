@@ -2,8 +2,58 @@
 	background-color: aliceblue;
 	border: 1px solid gray;
 	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 8px 40px 8px 10px;
+	position: relative;
+	font-size: 16px;
 }
 
 .drag {
-	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: rgba(0, 0, 0, .05);
+	border-radius: 3px;
+	height: 100%;
+	width: 40px;
+}
+
+.title {
+	.done & {
+		text-decoration: line-through;
+	}
+}
+
+.mark {
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: 4px solid #d6d6d6;
+	position: relative;
+	display: block;
+	margin-right: 20px;
+	box-sizing: border-box;
+	transition: border-width .2s ease-in;
+	cursor: pointer;
+
+	&.low {
+		border: 4px solid #bbe2b5;
+	}
+	&.high {
+		border: 4px solid #e9910c;
+	}
+	&.extreme {
+		border: 4px solid #e90000;
+	}
+
+	.checkBox:checked + & {
+		border-width: 10px;
+	}
+}
+
+.checkBox {
+	display: none;
 }

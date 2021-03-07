@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --mode development --open --hot",
     "test-update": "npx jest --updateSnapshot",
     "test": "npx jest",
-    "lint-fix": "npx eslint --fix --ext .js,.jsx,.ts,.tsx src/",
+    "lint": "npx eslint --fix --ext .js,.jsx,.ts,.tsx src/",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -18,7 +18,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run test"
+      "pre-commit": "npm run lint"
     }
   },
   "author": "a.kozeruk",
@@ -32,14 +32,14 @@
     "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.1",
     "@reduxjs/toolkit": "^1.4.0",
-    "@storybook/addon-actions": "^6.0.5",
-    "@storybook/addon-docs": "^6.0.5",
-    "@storybook/addon-knobs": "^6.0.5",
-    "@storybook/addon-links": "^6.0.5",
-    "@storybook/addon-storysource": "^6.0.5",
-    "@storybook/addon-viewport": "^6.0.5",
-    "@storybook/addons": "^6.0.5",
-    "@storybook/react": "^6.0.5",
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-docs": "^6.1.21",
+    "@storybook/addon-knobs": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/addon-storysource": "^6.1.21",
+    "@storybook/addon-viewport": "^6.1.21",
+    "@storybook/addons": "^6.1.21",
+    "@storybook/react": "^6.1.21",
     "@stryker-mutator/core": "^4.1.2",
     "@stryker-mutator/typescript": "^4.0.0",
     "@testing-library/react-hooks": "^3.2.1",

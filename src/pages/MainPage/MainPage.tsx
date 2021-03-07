@@ -1,23 +1,18 @@
 import React, { FC } from 'react';
-import { Task } from '@/modules';
+import { TaskList, taskListMock } from '@/modules';
 
 interface IMainPageProps {
 	prop1: string;
 }
 
 export const MainPage: FC<IMainPageProps> = () => {
+	console.log('taskListMock', taskListMock);
 	return (
 		<div>
 			<h1>TASK PAGE</h1>
 
 			<div>
-				<Task
-					id="1"
-					title="Task1"
-					priority={1}
-					description="234567"
-					isDone={false}
-				/>
+				<TaskList taskList={taskListMock} />
 			</div>
 		</div>
 	);
