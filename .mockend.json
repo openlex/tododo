@@ -9,5 +9,13 @@
   "Comment": {
 	"body": "string",
 	"post": "Post"
+  },
+  "Todo": {
+	"id": "string",
+	"title": "string",
+	"completed": "boolean",
+	"priority": "int",
+	"weight": "int",
+	"description": "string"
   }
 }
