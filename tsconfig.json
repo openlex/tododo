@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "allowJs": true,
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@mocks/*": [
+        "./__mocks__/*"
+      ],
+      "@mocks": [
+        "./__mocks__/index"
+      ],
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "removeComments": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "outFile": "index.js",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "pretty": true
+  }
+}
